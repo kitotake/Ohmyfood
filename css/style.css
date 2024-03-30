@@ -1,14 +1,14 @@
 /****** General ***********/
 * {
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 :root {
-    --main-color     : #0065fc;
-    --main-bg-color  : #f2f2f2;
-    --filter-bg-color: #deebff;
 
-    --btn-bg-color:#9356DC;
+    --Primaire-color:#9356DC;
+    --Secondaire-color:#FF79DA ;
+    --Tertiaire-color:#99E2D0;
+
 }
 
 button{
@@ -19,10 +19,25 @@ button{
 
 }
 
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+    .main-container{
+      flex-direction: column;
+    }
+ 
+  }
+
 body {
     display        : flex;
     justify-content: center;
 }
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+  
 
 a {
     color          : inherit;
@@ -38,14 +53,30 @@ body{
     left: calc(50% - 200px / 2 - 1px);
 }
 
-.num1{
+.Number{
 width: 24px;
 height: 24px;
 border-radius: 20px;
-background: green;
+background: var(--Primaire-color);
 position: absolute;
 text-align: center;
 }
+
+
+/*
+    background: #9356dc;
+    color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+*/
+/*
 .btn1{
     display: inline-block;
     background-color: #7b38d8;
@@ -57,3 +88,4 @@ text-align: center;
     margin-left: 50px;
 }
 
+*/
