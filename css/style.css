@@ -19,21 +19,21 @@ button{
 
 }
 
-/* Small devices (phones, less than 768px) */
+/* Small devices (phones, less than 768px) 
 @media (max-width: 768px) {
     .main-container{
-      flex-direction: column;
+  
     }
  
   }
-
+*/
 body {
     display        : flex;
     justify-content: center;
 }
 .main-container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 420px;
     padding: 0 50px;
     box-sizing: border-box;
   }
@@ -46,12 +46,20 @@ a {
 body{
     background-color: rgb(105, 102, 102);
 }
-.logo{
-    position: absolute;
-    width: 200px;
-    height: 34.2px;
-    left: calc(50% - 200px / 2 - 1px);
-}
+.header{
+    background: white;
+        z-index: 2;
+        font-family: "Shrikhand", cursive;
+        font-size: 2.5rem;
+        height: 6rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;}
+.header .headerLogo {
+        margin: auto;
+        height: 3rem;}
 
 .Number{
 width: 24px;
@@ -62,6 +70,41 @@ position: absolute;
 text-align: center;
 }
 
+
+li {
+    text-decoration: none;
+    padding-bottom: 20px;
+    list-style-type: none;
+    color: #000;
+    display: block;
+    transition: ease-out 0.1s;
+}
+
+.filter_container{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    margin-bottom: 12px;
+    height: 45px;
+    width: fit-content;
+   margin-left: 40px;
+   margin-top: 40px;
+}
+
+.iconsfilter{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 45px;
+width: 45px;
+}
 
 /*
     background: #9356dc;
