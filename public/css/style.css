@@ -36,19 +36,6 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-.about {
-  background: #f6f6f6;
-  text-align: center;
-  width: 100%;
-  padding: 40px 0;
-}
-.about h2 {
-  font-weight: bold;
-}
-.about p {
-  color: #4d4d4d;
-}
-
 .load {
   background: -webkit-linear-gradient(#ffffff, #99e2d0, #ff79da, #9356dc);
   width: 100%;
@@ -103,4 +90,56 @@ html {
                                                      
   .loader_food span:nth-child(8) {                   
     animation: grow 1s ease-in-out 0.15s infinite;   
-  }                                                  
+  }                      
+  
+  .main--header h1{
+    text-align: center;
+  }
+
+  .maps{
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 5px 5px 0px #dddddd;
+  }
+
+.maps--search{
+  border: none;
+  background:#eaeaea;
+  font-size: 1rem;
+  padding: 20px 5px 20px 5px;
+  margin-top: 5px;
+  text-align: center;
+  width: 150px; 
+}
+
+
+  .about{
+    background: #f6f6f6;
+    text-align: center;
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .about h2{
+    font-weight: bold;
+  }
+  .about p {
+    color: #4d4d4d;
+  }
+
+.btn_about button{
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  padding: 10px 5px; 
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px #aaa;
+  corsor: pointer;
+}
+.bon-about button:hover{
+  box-shadow: 4px 4px 6px #000;
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+}
