@@ -2,108 +2,179 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ohmyfood</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./public/css/style.css">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./public/css/style.css" />
+  <title>Ohmyfood</title>
+  
 
+  <!-- mise a jour du 15/04/2024 + css -->
 </head>
+
 <body>
-<!--loader -->
-<div class="load">
-    <div class="loader_food">
-<span>o</span>
-<span>h</span>
-<span>m</span>
-<span>y</span>
-<span>f</span>
-<span>o</span>
-<span>o</span>
-<span>d</span>
-    </div>
-    <div>
-        <span>
-            <i class="fas fa-utensils"></i>
-        </span>
-    </div>
-</div>
-
-<header class="main--header">
-    <h1><a href="#">Ohmyfood</a></h1>
-</header>
-
-<main class="main">
-<div class="maps">
-    <span>
-        <i class="fas fa-map-marker-alt"></i>
-    </span>
-    <span class="maps--search">
-        <input type="search" name="city" value="Paris,Belleville" placeholder="Votre ville">
-    </span>
-</div>
-<div class="about">
-    <h2>Réservez le menu qui vous convient</h2>
-    <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-    <span class="btn_about"></span>
-    <button>Explorer nos restaurants</button>
-</div>
-<section class="opera">
-    <h2>Fontionnement</h2>
-    <ul class="opera_steps">
-        <li>
-            <div class="opera_steps-number">1</div>
-            <div><i class="fas fa-mobile-alt opera_steps-icon"></i></div>
-            <p>Choisissez un restaurants</p>
-        </li>
-        <li>
-            <div class="opera_steps-number">2</div>
-            <div><i class="fas fa-list-ul opera_steps-icon"></i></div>
-            <p>Choisissez votre menu</p>
-        </li>
-        <li>
-            <div class="opera_steps-number">3</div>
-            <div><i class="fas fa-store opera_steps-icon"></i></div>
-            <p>Dégustez au restaurant</p>
-        </li>
-    </ul>
-</section>
-
-<section class="">
-    <div class="main--restaurant">
-        <div class="restaurant-title">
-            <h3>Restaurant</h3>
+  <div class="main-container">
+    <header>
+      <div class="logo">
+        <img src="./img/logo/ohmyfood.png" alt="ohmyfood" style="   width: 150px;" />
+      </div>
+      <div class="map">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" id="name" name="name" placeholder="Paris, Belleville" size="10" />
+      </div>
+    </header>
+    <main style="background-color: blueviolet">
+      <section class="haut-de-page">
+        <div class="huat">
+          <h2>Réservez le menu qui vous convient</h2>
+          <p>
+            Découvrez des restaurants d’exception, sélectionnés par nos soins.
+          </p>
+          <div><button class="btnh">Explorer nos restaurants</button></div>
         </div>
-        <div class="card">
-            <div class="btn_card">
-                <span class="new">Nouveau</span>
-            </div>
-            <a>
-                <figure>
-                    <img src="/img/restaurants/menu-palette-gout.jpg" alt="restaurants menu palette gout">
-                </figure>
-                <figcaption>
-                    <div class="heart">
-                        <h4>La palette du goût</h4>
-                        <div class="fill_heart">
-                            <span><i class="fill far fa-heart fa-2x"></i></span>
-                        </div>
-                    </div>
-                    <p>Ménilmontant</p>
-                </figcaption>
+      </section>
+    </main>
+    <section class="Fonct" style="background-color: rgb(102, 56, 56)">
+      <h2 class="f-text">
+        Fonctionnement
+      </h2>
+      <div class="fonct-haut">
+        <article>
+          <div class="numbre">1</div>
+          <div class="fonct-btn">
+            <svg width="14" height="21" viewBox="0 0 14 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.3965 0.129883H2.27071C1.1911 0.129883 0.315186 0.969727 0.315186 2.00488V18.2549C0.315186 19.29 1.1911 20.1299 2.27071 20.1299H11.3965C12.4761 20.1299 13.352 19.29 13.352 18.2549V2.00488C13.352 0.969727 12.4761 0.129883 11.3965 0.129883ZM6.83361 18.8799C6.11251 18.8799 5.52992 18.3213 5.52992 17.6299C5.52992 16.9385 6.11251 16.3799 6.83361 16.3799C7.55471 16.3799 8.13729 16.9385 8.13729 17.6299C8.13729 18.3213 7.55471 18.8799 6.83361 18.8799ZM11.3965 14.6611C11.3965 14.9189 11.1765 15.1299 10.9076 15.1299H2.75959C2.49071 15.1299 2.27071 14.9189 2.27071 14.6611V2.47363C2.27071 2.21582 2.49071 2.00488 2.75959 2.00488H10.9076C11.1765 2.00488 11.3965 2.21582 11.3965 2.47363V14.6611Z"
+                fill="#7E7E7E" />
+            </svg>
+            Choisissez un restaurant
+          </div>
+        </article>
+        <article>
+          <div class="numbre">2</div>
+          <div class="fonct-btn">
+            <i class="fa-solid fa-list"></i>
+            Composez votre menu
+          </div>
+        </article>
+        <article>
+          <div class="numbre">3</div>
+          <div class="fonct-btn">
+            <i class="fa-solid fa-store pinlk"></i>
+            Dégustez au restaurant
+          </div>
+        </article>
+      </div>
+
+    </section>
+    <section class="card-main" style="background-color: rgb(106, 160, 231)">
+      <div class="card-menu5">
+        <h2 class="r-txt">Restaurants</h2>
+        <figure>
+          <div class="card">
+            <a href="#">
+              <img class="card-img" src="./img/restaurants/menu-palette-gout.jpg" alt="La palette du goût" width="150px"
+                height="150px" />
+                <div class="new"><p>Nouveau</p></div>
             </a>
-        </div>
-    </div>
-</section>
+            <div class="card-titel">
+              <h3>La palette du goût</h3>
+              <p>Ménilmontant</p>
+            </div>
+            <div class="anime-heart">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+        </figure>
 
-</main>
+        <figure>
+          <div class="card">
+            <a href="#">
+              <img class="card-img" src="./img/restaurants/menu-note-enchantee.jpg" alt="La palette du goût"
+                width="150px" height="150px" />
+            </a>
+            <div class="card-titel">
+              <h3>La note enchantée</h3>
+              <p>Charonne</p>
+            </div>
+            <div class="anime-heart">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+        </figure>
+        <figure>
+          <div class="card">
+            <a href="#">
+              <img class="card-img" src="./img/restaurants/menu-francaise.jpg" alt="La palette du goût" width="150px"
+                height="150px" />
+            </a>
+            <div class="card-titel">
+              <h3>À la française</h3>
+              <p>Cité Rouge</p>
+            </div>
+            <div class="anime-heart">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
 
+        </figure>
+        <figure>
+          <div class="card">
+            <a href="#">
+              <img class="card-img" src="./img/restaurants/menu-delice-sens.jpg" alt="La palette du goût" width="150px"
+                height="150px" />
+            </a>
+            <div class="card-titel">
+              <h3>Le délice des sens</h3>
+              <p>Folie-Méricourt</p>
+            </div>
+            <div class="anime-heart">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+        </figure>
+
+    </section>
+    <section class="scfooter">
+      <footer>
+        <ul>
+          <div>
+            <i class="fa-solid fa-utensils"></i>
+            <h3>Proposer un restaurant</h3>
+          </div>
+          <div>
+            <i class="fa-hands-helping fas footer__icon" aria-hidden="true"></i>
+            <h3>Devenir partenaire</h3>
+          </div>
+          <il>Mentions légales</il>
+          <il>Contact</il>
+        </ul>
+        <img src="./img/logo/ohmyfood.png" alt="ohmyfood" style="width: 139px; height: 27px" />
+
+      </footer>
+    </section>
+  </div>
+  <!--
+    -cœur
+    <i class="fa-regular fa-heart"></i>
+    
+    -flèche
+    <i class="fa-solid fa-arrow-left"></i>
+
+    --check
+    <i class="fa-regular fa-circle-check"></i>
+
+    --utensils
+    <i class="fa-solid fa-utensils"></i>
+
+    --serrer la main
+    <i class="fa-hands-helping fas footer__icon" aria-hidden="true"></i>
+
+    -MAP
+    <i class="fa-solid fa-location-dot"></i>
+-->
 </body>
 
 </html>
