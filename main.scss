@@ -1,8 +1,8 @@
 // Import core styles
-@import 'sass/variables';
-@import 'sass/base-styles';
-@import 'sass/main-layout';
-@import 'sass/page-restaurant';
+@use 'sass/variables' as *;
+@use 'sass/base-styles' as *;
+@use 'sass/main-layout' as *;
+@use 'sass/page-restaurant' as *;
 
 
 

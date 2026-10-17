@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OhMyFood réunit les meilleurs restaurants parisiens. Découvrez des menus d’exception et réservez en ligne.">
     <link rel="icon" href="./assets/img/logo/ohmyfood.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +17,7 @@
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
     
-    <title>OhMyFood</title>
+    <title>OhMyFood – Restaurants gastronomiques</title>
 </head>
 
 <body>
@@ -30,13 +31,13 @@
             <div class="header-logo">
                 <a href="#" title="Retour à la page d'accueil">
                     <div class="header-logo-container">
-                        <img src="./assets/img/logo/ohmyfood.png" alt="OhMyFood - Home" width="398" height="68">
+                        <img src="./assets/img/logo/ohmyfood.png" alt="OhMyFood - Home" width="392" height="68">
                     </div>
                 </a>
             </div>
             <div class="header-location">
                 <i class="fa-solid fa-location-dot"></i>
-                <input type="text" placeholder="Paris, Belleville">
+                <input type="text" placeholder="Paris, Belleville" aria-label="Localisation">
             </div>
         </div>
     </header>
@@ -52,12 +53,12 @@
                         <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
                     </div>
                     <div class="search-button">
-                        <a href="#" title="Explorer nos restaurants">Explorer nos restaurants</a>
+                        <a href="#restaurants" title="Explorer nos restaurants">Explorer nos restaurants</a>
                     </div>
                 </div>
             </section>
             <section class="fonctionnement">
-                <div class="fonctionnement-wrappe">
+                <div class="fonctionnement-wrapper">
                     <div class="fonctionnement-title">
                         <h1>fonctionnement</h1>
                   
@@ -89,23 +90,23 @@
                    
             </section>
 
-            <section class="restaurant">
+            <section class="restaurants" id="restaurants">
                 <div class="restaurants-title">
                     <h2 class="section-title">Restaurants</h2>
                 </div>
                 <div class="restaurants-cards">
-                    <div class="restaurants-cards-container">
+                    <div class="restaurants-card-container">
                         <article class="restaurants-card">
                             <a href="./restaurants/lapalette-dugout.html" title="La palette du goût">
 
                                 <figure>
-                                    <img src="./assets/img/restaurants/menu-palette-gout.jpg" width="4402" height="2935"
+                                    <img src="./assets/img/restaurants/menu-palette-gout.jpg" width="4402" height="2935" loading="lazy"
                                         alt="La palette du goût à Ménilmontant">
                                     <figcaption>Nouveau</figcaption>
                                 </figure>
                             </a>
                             <div class="restaurants-card-content">
-                                <a href="./assets/img/restaurants/menu-palette-gout.jpg" title="La palette du goût">
+                                <a href="./restaurants/lapalette-dugout.html" title="La palette du goût">
                                     <div class="restaurants-card-txt">
                                         <h3 class="restaurants-card-name">La palette du goût</h3>
                                         <p class="restaurants-card-location">Ménilmontant
@@ -128,7 +129,7 @@
 
                     <div class="restaurants-card-container">
                         <article class="restaurants-card">
-                            <a href="./restaurants/la-noteenchantée.html" title="La note enchantée">
+                            <a href="./restaurants/la-note-enchantee.html" title="La note enchantée">
                                 <figure>
                                     <img src="./assets/img/restaurants/menu-note-enchantee.jpg" width="3024"
                                         height="3780" alt="La note enchantée à Charonne">
@@ -136,7 +137,7 @@
                                 </figure>
                             </a>
                             <div class="restaurants-card-content">
-                                <a href="./restaurants/la-noteenchantée.html" title="La note enchantée">
+                                <a href="./restaurants/la-note-enchantee.html" title="La note enchantée">
                                     <div class="restaurants-card-txt">
                                         <h3 class="restaurants-card-name">La note enchantée</h3>
                                         <p class="restaurants-card-location">Charonne
@@ -189,18 +190,18 @@
 
                     <div class="restaurants-card-container">
                         <article class="restaurants-card">
-                            <a href="./restaurants/delice-dessens.html" title="le delice des sens">
+                            <a href="./restaurants/delice-dessens.html" title="Le délice des sens">
                                 <div class="restaurants-card-image">
                                     <figure>
-                                        <img src="./assets/img/restaurants/menu-delice-sens.jpg"
+                                        <img src="./assets/img/restaurants/menu-delice-sens.jpg" loading="lazy"
                                             alt="le delice des sens a Folie-Méricourt" width="5043" height="3456">
                                     </figure>
                                 </div>
                             </a>
                             <div class="restaurants-card-content">
-                                <a href="./restaurants/delice-dessens.html" title="le delice des sens">
+                                <a href="./restaurants/delice-dessens.html" title="Le délice des sens">
                                     <div class="restaurants-card-txt">
-                                        <h3 class="restaurants-card-name"> le delice des sens</h3>
+                                        <h3 class="restaurants-card-name">Le délice des sens</h3>
                                         <p class="restaurants-card-location">Folie-Méricourt
                                         </p>
                                     </div>

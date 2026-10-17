@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La note enchantée : une carte gourmande, des entrées raffinées et des plats généreux. Réservez dès maintenant.">
     <link rel="icon" href="../assets/img/logo/ohmyfood.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <title>OhMyFood - Commande de Repas en ligne</title>
+    <title>La note enchantée – OhMyFood</title>
 </head>
 
 <body>
@@ -24,14 +25,14 @@
     </div>
     <header class="page-header">
         <div class="page-header-container">
-            <div class="header-arrox">
-                <a href="../index.html">
+            <div class="header-arrow">
+                <a href="../index.html" aria-label="Retourner à l'accueil">
                     <i class="fa-solid fa-arrow-left arrow"></i></a>
             </div>
             <div class="page-header-logo">
                 <a href="../index.html" title="Retourner a la page d'accueil">
                     <div class="page-header-logo-container">
-                        <img src="../assets/img/logo/ohmyfood.png" alt="ohmyfood" width="398" height="68">
+                        <img src="../assets/img/logo/ohmyfood.png" alt="OhMyFood - Home" width="392" height="68">
                     </div>
                 </a>
             </div>
@@ -40,7 +41,7 @@
     <main>
         <div class="image-container">
             <figure>
-                <img src="../assets/img/restaurants/menu-note-enchantee.jpg" alt="La note enchantee">
+                <img src="../assets/img/restaurants/menu-note-enchantee.jpg" alt="La note enchantée">
             </figure>
         </div>
         <div class="page-main-wrapper">
@@ -55,11 +56,11 @@
             </div>
         
                 <section class="menu-section entrees">
-                    <div class="menu-title">entrees</div>
+                    <div class="menu-title">entrées</div>
                     <div class="menu-restaurant">
                         <input type="checkbox" id="lanote-entree1">
                         <div class="menu-restaurant-item">
-                            <label for="lanote-entree1" title="Ravioles de foie gras" class="menu-labels"></label>
+                            <label for="lanote-entree1" title="Ravioles de foie gras" class="menu-labels"><span class="sr-only">Ravioles de foie gras</span></label>
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
                                     <h2>Ravioles de foie gras</h2>
@@ -82,15 +83,14 @@
                     <div class="menu-restaurant">
                         <input type="checkbox" id="lanote-entree2">
                         <div class="menu-restaurant-item">
-                            <label for="lanote-entree2" class="menu-labels" title="Caviar osietre">
-                            </label>
+                            <label for="lanote-entree2" class="menu-labels" title="Caviar osciètre"><span class="sr-only">Caviar osciètre</span></label>
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Caviar oscietre</h2>
-                                    <p>sur blini a la farine de blé noir</p>
+                                    <h2>Caviar osciètre</h2>
+                                    <p>Sur blini à la farine de blé noir</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
-                                    23€
+                                    35€
                                 </div>
                             </div>
                             <div class="menu-restaurant-item-selected">
@@ -106,11 +106,11 @@
                     <div class="menu-restaurant">
                         <input type="checkbox" id="lanote-entree3">
                         <div class="menu-restaurant-item">
-                            <label for="lanote-entree3" class="menu-labels"></label>
+                            <label for="lanote-entree3" class="menu-labels" title="Homard et espuma de potiron"><span class="sr-only">Homard et espuma de potiron</span></label>
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>homar et espuma</h2>
-                                    <p>Et sa crème</p>
+                                    <h2>Homard et espuma de potiron</h2>
+                                    <p>Marinés aux zestes d'orange</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     20€
@@ -130,7 +130,7 @@
                         <input type="checkbox" id="lanote-entree4">
                         <div class="menu-restaurant-item">
                             <label for="lanote-entree4" class="menu-labels"
-                                title="Foie gras de canard cuit entier"></label>
+                                title="Foie gras de canard cuit entier"><span class="sr-only">Foie gras de canard cuit entier</span></label>
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
                                     <h2>Foie gras de canard cuit entier</h2>
@@ -154,9 +154,9 @@
                 <section class="menu-section plats">
                     <div class="menu-title">plats</div>
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="lanote-plat1" title="Noix de coquilles Saint-Jacques">
+                        <input type="checkbox" id="lanote-plat1">
                         <div class="menu-restaurant-item">
-                            <label for="lanote-plat1" class="menu-labels"></label>
+                            <label for="lanote-plat1" class="menu-labels" title="Noix de coquilles Saint-Jacques"><span class="sr-only">Noix de coquilles Saint-Jacques</span></label>
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
                                     <h2>Noix de coquilles Saint-Jacques</h2>
@@ -177,16 +177,39 @@
                         </div>
                     </div>
                     <div class="menu-restaurant">
-                        <input type="checkbox" id="lanote-plat3">
+                        <input type="checkbox" id="lanote-plat2">
                         <div class="menu-restaurant-item">
-                            <label for="lanote-plat3" class="menu-labels" title="Langouste poêlée"></label>
+                            <label for="lanote-plat2" class="menu-labels" title="Langoustine poêlée"><span class="sr-only">Langoustine poêlée</span></label>
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
-                                    <h2>Langouste poêlée</h2>
-                                    <p>Purée de patate duoce</p>
+                                    <h2>Langoustine poêlée</h2>
+                                    <p>Purée de patate douce</p>
                                 </div>
                                 <div class="menu-restaurant-item-price">
                                     35€
+                                </div>
+                            </div>
+                            <div class="menu-restaurant-item-selected">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white"
+                                    class="w-5 h-5">
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-restaurant">
+                        <input type="checkbox" id="lanote-plat3">
+                        <div class="menu-restaurant-item">
+                            <label for="lanote-plat3" class="menu-labels" title="Mijoté de queue de bœuf"><span class="sr-only">Mijoté de queue de bœuf</span></label>
+                            <div class="menu-restaurant-item-content">
+                                <div class="menu-restaurant-item-txt">
+                                    <h2>Mijoté de queue de bœuf</h2>
+                                    <p>Et riz sauvage aux zestes de citron</p>
+                                </div>
+                                <div class="menu-restaurant-item-price">
+                                    44€
                                 </div>
                             </div>
                             <div class="menu-restaurant-item-selected">
@@ -229,7 +252,7 @@
                     <div class="menu-restaurant">
                         <input type="checkbox" id="lanote-dessert2">
                         <div class="menu-restaurant-item">
-                            <label for="lanote-dessert2" class="menu-labels"></label>
+                            <label for="lanote-dessert2" class="menu-labels" title="Baba au rhum revisité"><span class="sr-only">Baba au rhum revisité</span></label>
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
                                     <h2>Baba au rhum revisité</h2>
@@ -252,7 +275,7 @@
                     <div class="menu-restaurant">
                         <input type="checkbox" id="lanote-dessert3">
                         <div class="menu-restaurant-item">
-                            <label for="lanote-dessert3" class="menu-labels" title="Tarte au citron meringuée"></label>
+                            <label for="lanote-dessert3" class="menu-labels" title="Tarte au citron meringuée"><span class="sr-only">Tarte au citron meringuée</span></label>
                             <div class="menu-restaurant-item-content">
                                 <div class="menu-restaurant-item-txt">
                                     <h2>Tarte au citron meringuée</h2>
@@ -274,13 +297,12 @@
             </div>
             </section>
             <div class="order-button-wrapper">
-                <button class="order-button" arie-label="Commander" title="Commander">Commander</button>
+                <button class="order-button" aria-label="Commander" title="Commander">Commander</button>
             </div>
-        </div>
         </div>
     </main>
     <footer>
-        <div class="page-footer">
+        <div class="main-footer">
             <div class="footer-logo">
                 <p>ohmyfood</p>
             </div>
@@ -303,12 +325,12 @@
                                 fill="white" />
                         </svg>
                         <a href="#" title="Mentions légales">
-                            <p>Metions légales</p>
+                            <p>Mentions légales</p>
                         </a>
                     </div>
                     <div class="footer-nav-item">
                         <a href="mailto:contact@ohmyfood.com" title="Contact">
-                            <p>Contact</p>
+                            <p class="footer-txt">Contact</p>
                         </a>
                     </div>
                 </nav>
