@@ -50,7 +50,7 @@ select {
 }
 
 body {
-  font-family: Roboto;
+  font-family: $font-text;
 }
 
 a {
@@ -62,7 +62,7 @@ a {
 .header-location {
     background-color: #eaeaea;
     color: #353535;
-    font-family: Roboto;
+    font-family: $font-text;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
@@ -73,7 +73,7 @@ a {
     margin-right: 17px;
   }
   .search-heading {
-    font-family: Roboto;
+    font-family: $font-text;
     font-size: 16px;
     font-weight: 700;
     line-height: 28px;
@@ -82,13 +82,13 @@ a {
   }
   
   .search-discover {
-    font-family: Roboto;
+    font-family: $font-text;
     font-size: 12px;
     line-height: 21px;
     letter-spacing: 0em;
     text-align: center;
   }
-  .search-discover h2 {
+    .search-discover p {
     font-weight: 300;
   }
   .search {
@@ -96,7 +96,7 @@ a {
   }
   
   .fonctionnement-title {
-    font-family: Roboto;
+    font-family: $font-text;
     font-size: 16px;
     font-weight: 700;
     line-height: 28px;
@@ -104,8 +104,8 @@ a {
     text-align: left;
   }
 
-  .fonctionnement-options-row h2 {
-    font-family: Roboto;
+    .fonctionnement-options-row h3 {
+    font-family: $font-text;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
@@ -131,7 +131,7 @@ a {
   }
 
   .restaurants-title {
-    font-family: Roboto;
+    font-family: $font-text;
     font-size: 16px;
     font-weight: 700;
     line-height: 28px;
@@ -145,7 +145,7 @@ a {
   }
   
 figcaption {
-    font-family: Roboto;
+    font-family: $font-text;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
@@ -158,7 +158,7 @@ figcaption {
   }
   
   .restaurants-card-name {
-    font-family: Roboto;
+    font-family: $font-text;
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
@@ -166,7 +166,7 @@ figcaption {
     text-align: left;
   }
   .restaurants-card-location {
-    font-family: Roboto;
+    font-family: $font-text;
     font-size: 17px;
     font-weight: 300;
     line-height: 20px;
@@ -174,13 +174,12 @@ figcaption {
     text-align: left;
   }
   
-  .main-footer,
-  .page-footer {
+    .main-footer {
     background-color: #353535;
     color: white;
   }
   .footer-logo {
-    font-family: Shrikhand;
+    font-family: $font-title;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -190,9 +189,14 @@ figcaption {
 .footer-nav-item {
     display: flex;
     color: white;
-    font-family: Roboto;
+    font-family: $font-text;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
+
+.search-heading h1 {
+  font-size: inherit;
+  font-weight: inherit;
+}
